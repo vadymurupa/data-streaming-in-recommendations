@@ -64,7 +64,7 @@ services:
     # Install Towhee after the container starts
     entrypoint: >
       sh -c "
-      pip install towhee towhee.models && 
+      conda install ploomber -c conda-forge && 
       start-notebook.sh --NotebookApp.token=''
       " 
 
